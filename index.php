@@ -1,3 +1,6 @@
+<?php 
+	if(isset($_SESSION['user'])){
+?>
 <html ng-app="request">
 	<head>
 		<title>Requests</title>
@@ -26,8 +29,12 @@
 				</div>
 			</div>
 		</div>
-
 		<script src="js/angular.min.js" type="text/javascript"></script>
-		<script src="js/tweetfeed.js" type="text/javascript"></script>
+		<script src="js/app.js" type="text/javascript"></script>
 	</body>
 </html>
+<?php 
+	}else{
+		header('Location: login.php');		
+	}//*/
+?>
