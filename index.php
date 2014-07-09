@@ -1,5 +1,5 @@
 <?php 
-	if(isset($_SESSION['user'])){
+	//if(isset($_SESSION['user'])){
 ?>
 <html ng-app="request">
 	<head>
@@ -34,7 +34,7 @@
 	</body>
 </html>
 <?php 
-	}else{
+	/*}else{
 		header('Location: login.php');		
 	}//*/
 ?>
